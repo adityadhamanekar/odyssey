@@ -118,6 +118,9 @@ input::placeholder {
 
 body {
   background-color: black;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 #particles-js {
@@ -142,6 +145,15 @@ body {
 
 body::-webkit-scrollbar {
   width: 15px;
+}
+
+.blog-container::-webkit-scrollbar {
+  display: none;
+}
+.blog-container::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 80%);
+
+  height: 2px;
 }
 
 body::-webkit-scrollbar-track {
@@ -214,10 +226,6 @@ body::-webkit-scrollbar-thumb:hover {
   letter-spacing: 0.2rem;
   transition: all 0.2s;
   margin: 5rem 0 3rem 0;
-}
-.heading-secondary:hover {
-  transform: skewY(2deg) skewX(15deg) scale(1.1);
-  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 /*-----------------------------------*\
@@ -1361,22 +1369,26 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 4px;
 }
 
-.product-featured .countdown-desc {
-  color: var(--eerie-black);
-  font-size: var(--fs-9);
+.countdown-desc {
+  color: var(--white);
+  font-size: 1.5rem;
   font-weight: var(--weight-600);
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-.product-featured .countdown {
+.countdown {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 5px;
 }
 
-.product-featured .countdown-content {
-  padding: 5px;
-  background: var(--cultured);
+.countdown-content {
+  padding: 12px 15px;
+  margin: 2px;
+  background: rgba(189, 182, 182, 0.579);
   border-radius: var(--border-radius-md);
   text-align: center;
 }
@@ -2089,6 +2101,10 @@ footer {
   .copyright {
     --fs-8: 0.875rem;
   }
+
+  .countdown-desc {
+    font-size: 1.2rem;
+  }
 }
 
 /**
@@ -2105,6 +2121,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .countdown-desc {
+    font-size: 1.3rem;
   }
 
   .header-logo {
@@ -2175,7 +2195,7 @@ footer {
     margin: auto;
   }
 
-  .product-featured .countdown {
+  .countdown {
     gap: 20px;
   }
 
@@ -2694,12 +2714,12 @@ footer {
     padding: 2px;
   }
 
-  .product-featured .countdown-content {
-    padding: 5px 10px;
+  .countdown-content {
+    padding: 25px 40px;
   }
 
   .product-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /**
@@ -2822,7 +2842,8 @@ footer {
   }
 
   .product-grid {
-    grid-template-columns: repeat(3, 1fr);
+     grid-template-columns: repeat(2, 30%);
+    justify-content: center;
   }
 
   /**
@@ -2949,3 +2970,5 @@ footer {
 .blog-container {
   margin: 0 1rem;
 }
+
+/* animations */
