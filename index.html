@@ -34,28 +34,24 @@
                     </li>
 
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Categories</a>
+                        <a href="#schedule" class="menu-title">Schedule</a>
 
 
                     </li>
 
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Men's</a>
+                        <a href="#events" class="menu-title">Events</a>
 
 
                     </li>
 
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Women's</a>
+                        <a href="#contact" class="menu-title">Contact</a>
 
 
                     </li>
 
-                    <li class="menu-category">
-                        <a href="#" class="menu-title">Jewelry</a>
 
-
-                    </li>
 
 
 
@@ -72,24 +68,31 @@
             </button>
 
             <button class="action-btn">
-                <ion-icon name="bag-handle-outline"></ion-icon>
+                <a href="#schedule">
+                    <ion-icon name="time-outline"></ion-icon>
+                </a>
 
-                <span class="count">0</span>
             </button>
 
             <button class="action-btn">
-                <ion-icon name="home-outline"></ion-icon>
+                <a href="#home">
+                    <ion-icon name="home-outline"></ion-icon>
+                </a>
             </button>
 
-            <button class="action-btn">
-                <ion-icon name="heart-outline"></ion-icon>
+            <a href="#events">
+                <button class="action-btn">
+                    <ion-icon name="apps-outline"></ion-icon>
 
-                <span class="count">0</span>
-            </button>
 
-            <button class="action-btn" data-mobile-menu-open-btn>
-                <ion-icon name="grid-outline"></ion-icon>
-            </button>
+                </button>
+            </a>
+
+            <a href="#contact">
+                <button class="action-btn" data-mobile-menu-open-btn>
+                    <ion-icon name="call-outline"></ion-icon>
+                </button>
+            </a>
 
         </div>
 
@@ -106,52 +109,27 @@
             <ul class="mobile-menu-category-list">
 
                 <li class="menu-category">
-                    <a href="#" class="menu-title">Home</a>
-                </li>
-
-                <li class="menu-category">
-
-                    <button class="accordion-menu" data-accordion-btn>
-                        <p class="menu-title">Men's</p>
-
-                        <div>
-                            <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                        </div>
-                    </button>
-
-                    <ul class="submenu-category-list" data-accordion>
-
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">Shirt</a>
-                        </li>
-
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">Shorts & Jeans</a>
-                        </li>
-
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">Safety Shoes</a>
-                        </li>
-
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">Wallet</a>
-                        </li>
-
-                    </ul>
-
+                    <a href="#home" class="menu-title">Home</a>
                 </li>
 
 
 
 
 
+
+
+
+
                 <li class="menu-category">
-                    <a href="#" class="menu-title">Blog</a>
+                    <a href="#schedule" class="menu-title">Schedule</a>
                 </li>
 
                 <li class="menu-category">
-                    <a href="#" class="menu-title">Hot Offers</a>
+                    <a href="#events" class="menu-title">Events</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#contact" class="menu-title">Contact</a>
                 </li>
 
             </ul>
@@ -196,7 +174,7 @@
 
 
 
-    <main>
+    <main id="home">
         <div class="banner">
 
             <div class="container">
@@ -205,7 +183,7 @@
 
                     <div class="slider-item">
 
-                        <img src="./assets/web1.jpg" alt="women's latest fashion sale" class="banner-img">
+                        <img src="./assets/images/web1.jpg" alt="banner" class="banner-img">
 
                         <!-- <div class="banner-content">
     
@@ -270,7 +248,7 @@
 
         <!-- product container -->
 
-        <div class="product-container">
+        <div class="product-container" id="schedule">
 
             <div class="container">
 
@@ -291,11 +269,12 @@
 
                                     <div class="card__details">
                                         <ul>
-                                            <li>3 day tours</li>
-                                            <li>Up to 30 people</li>
-                                            <li>2 tour guides</li>
-                                            <li>Sleep in cozy hotels</li>
-                                            <li>Difficulty: easy</li>
+                                            <li>8 May</li>
+                                            <li>cultural day</li>
+                                            <li>tech Events</li>
+                                            <li>other event</li>
+                                            <li>other event
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -312,11 +291,12 @@
 
                                     <div class="card__details">
                                         <ul>
-                                            <li>3 day tours</li>
-                                            <li>Up to 30 people</li>
-                                            <li>2 tour guides</li>
-                                            <li>Sleep in cozy hotels</li>
-                                            <li>Difficulty: easy</li>
+                                            <li>9 may</li>
+                                            <li>event name</li>
+                                            <li>event naem
+                                            </li>
+                                            <li>events naem</li>
+                                            <li>event name</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -339,7 +319,7 @@
 
 
         <!-- blog -->
-        <div class="blog">
+        <div class="blog" id="events">
 
             <div class="container">
                 <h2 class="heading-secondary">Events</h2>
@@ -349,8 +329,7 @@
                     <div class="blog-card">
 
                         <a href="#">
-                            <img src="./assets/computer.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives"
-                                width="300" class="blog-banner">
+                            <img src="./assets/images/computer.jpg" alt="cs" width="300" class="blog-banner">
                         </a>
 
                         <div class="blog-content">
@@ -372,8 +351,7 @@
                     <div class="blog-card">
 
                         <a href="#">
-                            <img src="./assets/electronics.jpg"
-                                alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300"
+                            <img src="./assets/images/electronics.jpg" alt="electronics" width="300"
                                 class="blog-banner">
                         </a>
 
@@ -395,9 +373,7 @@
                     <div class="blog-card">
 
                         <a href="#">
-                            <img src="./assets/electrical.jpg"
-                                alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300"
-                                class="blog-banner">
+                            <img src="./assets/images/electrical.jpg" alt="electrical" width="300" class="blog-banner">
                         </a>
 
                         <div class="blog-content">
@@ -419,8 +395,7 @@
                     <div class="blog-card">
 
                         <a href="#">
-                            <img src="./assets/civil.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives"
-                                width="300" class="blog-banner">
+                            <img src="./assets/images/civil.jpg" alt="civil" width="300" class="blog-banner">
                         </a>
 
                         <div class="blog-content">
@@ -441,8 +416,7 @@
                     <div class="blog-card">
 
                         <a href="#">
-                            <img src="./assets/mech.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives"
-                                width="300" class="blog-banner">
+                            <img src="./assets/images/mech.jpg" alt="mech" width="300" class="blog-banner">
                         </a>
 
                         <div class="blog-content">
@@ -474,7 +448,7 @@
 
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
 
 
         <div class="footer-nav">
@@ -517,24 +491,18 @@
                     </li>
 
                     <li class="footer-nav-item">
-                        <a href="#" class="footer-nav-link">Prices drop</a>
+                        <a href="#" class="footer-nav-link">A</a>
                     </li>
 
                     <li class="footer-nav-item">
-                        <a href="#" class="footer-nav-link">New products</a>
+                        <a href="#" class="footer-nav-link">B</a>
                     </li>
 
                     <li class="footer-nav-item">
-                        <a href="#" class="footer-nav-link">Best sales</a>
+                        <a href="#" class="footer-nav-link">c</a>
                     </li>
 
-                    <li class="footer-nav-item">
-                        <a href="#" class="footer-nav-link">Contact us</a>
-                    </li>
 
-                    <li class="footer-nav-item">
-                        <a href="#" class="footer-nav-link">Sitemap</a>
-                    </li>
 
                 </ul>
 
@@ -550,8 +518,7 @@
                         </div>
 
                         <address class="content">
-                            419 State 414 Rte
-                            Beaver Dams, New York(NY), 14812, USA
+                            jain college of Engineering
                         </address>
                     </li>
 
@@ -619,10 +586,10 @@
 
             <div class="container">
 
-                <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+                <img src="assets/images/1000R LOGO ODYSSEY.png" alt="ODYSSEY" class="payment-img">
 
                 <p class="copyright">
-                    Copyright &copy; <a href="#">Anon</a> all rights reserved.
+                    Copyright &copy; <a href="#">ODYSSEY</a> all rights reserved.
                 </p>
 
             </div>

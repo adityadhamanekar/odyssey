@@ -1,4 +1,31 @@
 // mobile menu variables
+
+// Smooth scrolling
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute("href"));
+      target.scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+});
+
+let menuTitle = Array.from(document.querySelectorAll(".menu-title"));
+
+menuTitle.forEach(e => {
+  e.addEventListener("click", elem => {
+    let mob = document.querySelector(".mobile-navigation-menu");
+    let over = document.querySelector(".overlay");
+    overlay.classList.remove("active");
+    mob.classList.remove("active");
+  });
+});
+console.log(menuTitle);
+
 const mobileMenuOpenBtn = document.querySelectorAll(
   "[data-mobile-menu-open-btn]"
 );

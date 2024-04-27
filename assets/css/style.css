@@ -406,15 +406,15 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .card__picture--1 {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-    url(../bharat1.jpg);
+    url(../images/bharat1.jpg);
 }
 .card__picture--2 {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
-    url(../bharat1.jpg);
+    url(../images/bharat1.jpg);
 }
 .card__picture--3 {
   background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
-    url(../bharat1.jpg);
+    url(../images/bharat1.jpg);
 }
 .card__heading {
   font-size: 28px;
@@ -2842,7 +2842,7 @@ footer {
   }
 
   .product-grid {
-     grid-template-columns: repeat(2, 30%);
+    grid-template-columns: repeat(2, 30%);
     justify-content: center;
   }
 
@@ -2972,3 +2972,27 @@ footer {
 }
 
 /* animations */
+/* Define keyframes for the shaking animation */
+/* Define the keyframe animation */
+@keyframes shake {
+  0% {
+    transform: translateX(-5px);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-3px);
+  }
+  75% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animation to the element */
+.shakeIt {
+  animation: shake 5s ease infinite; /* Adjust duration and easing as needed */
+}
