@@ -146,7 +146,7 @@ body {
 body::-webkit-scrollbar {
   width: 15px;
 }
-
+/* 
 .blog-container::-webkit-scrollbar {
   display: none;
 }
@@ -154,7 +154,7 @@ body::-webkit-scrollbar {
   background: hsl(0, 0%, 80%);
 
   height: 2px;
-}
+} */
 
 body::-webkit-scrollbar-track {
   background: var(--white);
