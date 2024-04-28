@@ -28,10 +28,11 @@ if (window.innerWidth <= 768) {
   animations("blog", 1500, "bottom", 500);
 
   // countdown animations
-  animations("days", 1500, "bottom", 500);
-  animations("hours", 1500, "bottom", 500);
-  animations("min", 1500, "bottom", 500);
-  animations("sec", 1500, "bottom", 500);
+  animations("counter", 1500, "bottom", 500);
+
+  window.onload = function () {
+    window.scrollTo(0, 0);
+  };
 } else {
   animations("animate-element", 800, "top");
   animations("card1", 1500, "left", 500);
