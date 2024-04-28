@@ -39,6 +39,7 @@ if (window.innerWidth <= 768) {
   animations("card2", 1500, "bottom", 500);
   animations("card3", 1500, "right", 500);
   animations("blog", 1500, "bottom", 500);
+  animations("footer", 1500, "bottom", 500);
   // countdown animations
   animations("days", 1500, "left", 500);
   animations("hours", 1500, "top", 500);

@@ -1,5 +1,8 @@
 // mobile menu variables
-
+let banner = document.querySelector(".banner-img");
+// if (window.innerWidth <= 768) {
+//   banner.src = "./assets/images/mob.png";
+// }
 // Smooth scrolling
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {

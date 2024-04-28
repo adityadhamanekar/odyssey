@@ -2,9 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
- 
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -133,7 +130,7 @@ body {
   background-image: linear-gradient(
     99.9deg,
     rgba(27, 24, 31, 1) 21.2%,
-    rgba(4, 4, 89) 84.8%
+    rgba(4, 4, 89, 1) 84.8%
   );
   /* background-color: black; */
 }
@@ -219,7 +216,15 @@ body::-webkit-scrollbar-thumb:hover {
   text-transform: uppercase;
   font-weight: 700;
 
-  background-image: linear-gradient(to bottom, #fec11b, white, #056847);
+  background: linear-gradient(
+    to bottom,
+    #ff9933 0%,
+    #ff9933 33.33%,
+    #ffffff 50.33%,
+    #ffffff 55.67%,
+    #128807 66.67%,
+    #128807 100%
+  );
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
@@ -1709,7 +1714,7 @@ footer {
 .footer-nav {
   border-bottom: 1px solid var(--onyx);
   padding-bottom: 30px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .footer-nav-list:not(:last-child) {
@@ -2834,4 +2839,18 @@ footer {
 /* Apply the animation to the element */
 .shakeIt {
   animation: shake 5s ease infinite; /* Adjust duration and easing as needed */
+}
+
+@media only screen and (max-width: 480px) {
+  .slider-item .banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .slider-item:first-of-type {
+    aspect-ratio: initial;
+    margin-bottom: 2rem;
+  }
 }
