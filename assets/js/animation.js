@@ -20,6 +20,7 @@ if (window.innerWidth <= 768) {
   animations("card1", 1500, "bottom", 500);
 
   animations("banner", 1500, "bottom", 500);
+   animations("about", 1500, "bottom", 500);
 
   animations("card2", 1500, "bottom", 500);
 
@@ -46,6 +47,7 @@ if (window.innerWidth <= 768) {
   animations("hours", 1500, "top", 500);
   animations("min", 1500, "bottom", 500);
   animations("sec", 1500, "right", 500);
+  //  animations("about", 1500, "bottom", 500);
 }
 
 // Add an event listener for the 'beforeunload' event, which fires just before the page is unloaded
