@@ -1623,9 +1623,14 @@ body::-webkit-scrollbar-thumb:hover {
 
 .blog-category {
   width: max-content;
-  color: var(--white);
-  font-size: var(--fs-8);
+  font-weight: 600;
+  font-size:0.9rem;
   margin: auto;
+  background: linear-gradient(to bottom, #ff9933 0%, #ff9933 33.33%, #ffffff 50.33%, #ffffff 55.67%, #128807 66.67%, #128807 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+   
+    transition: all 0.2s;
 }
 
 .blog-title {
@@ -2966,4 +2971,20 @@ footer {
   .spaceball1{
     width: 20vh;
   }
+}
+
+.link-event{
+  color: black;
+}
+
+.link-event:hover{
+  color: #ff7730;
+}
+
+.link-event--green{
+  color: black;
+}
+
+.link-event--green:hover{
+  color: #28b485;
 }
