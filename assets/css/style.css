@@ -2940,7 +2940,7 @@ footer {
   margin-top: 15%;
   animation: MoveUpDown 2s linear infinite;
   opacity: 0;
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-fill-mode: none;
 }
 
@@ -2951,7 +2951,7 @@ footer {
   margin-top: 15%;
   animation: MoveUpDown 2s linear infinite;
   opacity: 0;
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-fill-mode: none;
 }
 
