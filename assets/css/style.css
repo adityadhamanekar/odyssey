@@ -6,6 +6,11 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+@font-face {
+  font-family: "Bad-mofo";
+  src: url("../../events/assets/fonts/BadMofo.ttf");
+}
+
 :root {
   /**
    * colors
@@ -2884,6 +2889,7 @@ footer {
   position: relative;
   z-index: 1;
   color: white !important;
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -2905,6 +2911,8 @@ footer {
 .highlight1 {
   position: relative;
   z-index: 1;
+  text-transform: uppercase;
+  /* font-family: "Bad-mofo"; */
   color: white !important;
 }
 
